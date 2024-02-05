@@ -9,9 +9,14 @@
 
 // Header
 #header {
-  @include center;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
   padding-top: 0%;
+  color: white;
+  justify-content: center;
 }
 
 @keyframes staticMove {
@@ -25,13 +30,11 @@
 
 #staticImage {
   width: 100%;
-  height: 20vh;
-  object-fit: cover;
+  height: 100vh;
+  background-image: url("/staticImage");
   position: absolute;
   z-index: -1;
-  background-image: url("../../public/staticImage.jpg"); /* Replace with your noise texture path */
-  background-repeat: repeat;
-  animation: staticMove 5s linear infinite;
+  animation: staticMove 2000s linear infinite;
 }
 
 #body {
