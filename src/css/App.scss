@@ -1,0 +1,61 @@
+// @mixin
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: 20vh;
+  text-align: center;
+}
+
+// Header
+#header {
+  @include center;
+  color: white;
+  padding-top: 0%;
+}
+
+@keyframes staticMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+#staticImage {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../public/staticImage.jpg"); /* Replace with your noise texture path */
+  background-repeat: repeat;
+  animation: staticMove 5s linear infinite;
+}
+
+#body {
+  padding-top: 2vh;
+}
+
+// Hero
+
+#hero {
+  writing-mode: vertical-lr;
+  height: 100%;
+  justify-content: center;
+  font-size: 3rem;
+  letter-spacing: 4vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: 60vh;
+  text-align: center;
+}
+
+// Footer
+
+#footer {
+  @include center;
+  color: aqua;
+}
