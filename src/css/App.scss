@@ -39,6 +39,22 @@
 
 #body {
   padding-top: 2vh;
+  height: 100vh;
+}
+
+.scroll-container {
+  /* This enables scroll snapping */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* This ensures the container fits the full viewport height */
+}
+
+section {
+  /* This defines each section as a snap point */
+  scroll-snap-align: start;
+  height: 100vh; /* Adjust the height as needed, 100vh will fill the viewport */
+  width: 100%;
+  /* Add any additional styling for your sections here */
 }
 
 // Hero
