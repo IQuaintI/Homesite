@@ -12,12 +12,33 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  height: 100vh;
+  height: 100vh; /* Or adjust to the desired header height */
   text-align: center;
   padding-top: 0%;
   color: white;
   justify-content: center;
+  position: relative; /* Added to act as a positioning context */
 }
+
+// Snap Scroll
+#scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Make the scroll container the height of the viewport */
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on touch devices */
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh; /* Each section fills the viewport */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+// Static Image
 
 @keyframes staticMove {
   0% {
@@ -30,31 +51,25 @@
 
 #staticImage {
   width: 100%;
-  height: 100vh;
+  height: 100%; /* Changed from 100vh to 100% */
   background-image: url("/staticImage");
+  background-size: cover; /* Ensure the background covers the header area */
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
   animation: staticMove 2000s linear infinite;
 }
 
-#body {
-  padding-top: 2vh;
-  height: 100vh;
-}
+// Body
 
-.scroll-container {
-  /* This enables scroll snapping */
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh; /* This ensures the container fits the full viewport height */
-}
-
-section {
-  /* This defines each section as a snap point */
-  scroll-snap-align: start;
-  height: 100vh; /* Adjust the height as needed, 100vh will fill the viewport */
+body,
+html {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  /* Add any additional styling for your sections here */
+  height: 100%;
+  overflow: hidden; /* Prevent the body from scrolling */
 }
 
 // Hero
@@ -68,13 +83,5 @@ section {
   display: flex;
   flex-direction: column;
   place-items: center;
-  height: 60vh;
-  text-align: center;
 }
 
-// Footer
-
-#footer {
-  @include center;
-  color: aqua;
-}
