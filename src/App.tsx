@@ -4,6 +4,7 @@ import Works from "./components/Works";
 import "../src/css/App.scss";
 
 import Card from "./assets/Card";
+import Rx from "/rxSymbol.png";
 
 function App() {
   return (
@@ -36,16 +37,18 @@ function App() {
           >
             {/* Content-Left */}
             <Grid item xs={5} id="content-left">
-              <Card
-                image="https://via.placeholder.com/150"
-                title="lorem ipsum dolor"
-                subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              />
+              <a href="https://legendary-lebkuchen-9a1881.netlify.app/">
+                <Card
+                  image={Rx}
+                  title="Recipe Book"
+                  subtitle="A proving ground for React, TypeScript, and SCSS. A useful start."
+                />
+              </a>
             </Grid>
 
             {/* Works */}
             <Grid item xs={2} id="hero">
-              <Works title="Liminals" />
+              <Works title="Insert Cont" />
             </Grid>
 
             {/* Content-Right */}

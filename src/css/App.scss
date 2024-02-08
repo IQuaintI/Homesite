@@ -85,3 +85,17 @@ html {
   place-items: center;
 }
 
+a {
+  cursor: pointer;
+  color: black; /* Set the link text color to black */
+  text-decoration: none; /* Optional: Removes underline from links */
+
+  &:hover {
+    background-color: white;
+    color: black; /* Ensures text remains black on hover */
+  }
+  &:active {
+    background-color: black;
+    color: white; /* Text color white when active/clicked */
+  }
+}
