@@ -9,18 +9,31 @@
   display: inline-block;
   width: 90%;
   padding: 10p;
-  height: fit-content;
+  height: auto;
   overflow: scroll;
   transition: all 0.3s ease;
   cursor: pointer;
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+  &:active {
+    color: black;
+  }
 }
 
 .card img {
-  width: 20%;
-  height: 20%;
+  width: 20vh;
   object-fit: contain;
   border-radius: 5px;
+}
+
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  &:hover {
+    opacity: 0.8;
+  }
 }

@@ -1,13 +1,9 @@
 interface WorksProps {
-  title: string;
+  children?: React.ReactNode;
 }
 
-function Works({ title }: WorksProps) {
-  return (
-    <>
-      <h1 id="hero">{title}</h1>
-    </>
-  );
+function Works({ children }: WorksProps) {
+  return <>{children}</>;
 }
 
 export default Works;

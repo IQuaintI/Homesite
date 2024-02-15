@@ -3,8 +3,15 @@ import Header from "./components/Header";
 import Works from "./components/Works";
 import "../src/css/App.scss";
 
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+// Import Bootstrap JS only if needed, and ensure you have jQuery and Popper.js if you do
+
+
 import Card from "./assets/Card";
 import Rx from "/rxSymbol.png";
+import linkedInLogo from "/linkedInLogo.png";
+import Linkedin from "./assets/Linkedin";
+import trash from "/trash.jpg";
 
 function App() {
   return (
@@ -37,26 +44,36 @@ function App() {
           >
             {/* Content-Left */}
             <Grid item xs={5} id="content-left">
-              <a href="https://legendary-lebkuchen-9a1881.netlify.app/">
-                <Card
-                  image={Rx}
-                  title="Recipe Book"
-                  subtitle="A proving ground for React, TypeScript, and SCSS. A useful start."
-                />
-              </a>
+              <Card
+                image={trash}
+                title="This Website"
+                subtitle="A small collection of rabble."
+                source="https://github.com/IQuaintI/Homesite"
+                site="https://agomez.me/"
+              />
             </Grid>
 
             {/* Works */}
             <Grid item xs={2} id="hero">
-              <Works title="Insert Cont" />
+              <div 
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/alex-gomez-87309b12b/"
+                  )
+                }
+              >
+                <Works children={<Linkedin image={linkedInLogo} />} />
+              </div>
             </Grid>
 
             {/* Content-Right */}
             <Grid item xs={5} id="content-right">
-              <Card
-                image="https://via.placeholder.com/150"
-                title="lorem ipsum"
-                subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <Card
+                image={Rx}
+                title="Recipe Book"
+                subtitle="A proving ground for React, TypeScript, and SCSS. A useful start."
+                source="https://github.com/IQuaintI/realRecipeBook"
+                site="https://recipebooktesting.netlify.app/"
               />
             </Grid>
           </Grid>
