@@ -1,12 +1,24 @@
-interface FooterProps {
-  title: string;
-}
+import "../styles/Footer.scss";
 
-function Footer({ title }: FooterProps) {
+function Footer() {
   return (
-    <>
-      <h1 id="footer">{title}</h1>
-    </>
+    <footer className="footer">
+      <div className="footer__container">
+        <div className="footer__content">
+          <p className="footer__text">© </p>
+
+          <div className="footer__social-media">
+            <a
+              href="https://www.linkedin.com/in/alexgomez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="../public/linkedInLogo.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
 

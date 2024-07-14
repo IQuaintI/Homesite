@@ -1,6 +1,4 @@
-
-
-import "../css/Card.scss";
+import '../styles/Card.scss';
 
 interface CardProps {
   image: string;
@@ -16,14 +14,24 @@ function Card({ image, title, subtitle, source, site }: CardProps) {
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <p>{subtitle}</p>
-      <button type="button" className="btn btn-secondary" onClick={() => window.open(source)}>
-        {" "}
-        Source{" "}
-      </button>
-      <button type="button" className="btn btn-primary" onClick={() => window.open(site)}>
-        {" "}
-        Demo{" "}
-      </button>
+      {source && (
+        <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={() => window.open(source, '_blank')}
+        >
+          Source
+        </button>
+      )}
+      {site && (
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={() => window.open(site, '_blank')}
+        >
+          Demo
+        </button>
+      )}
     </div>
   );
 }

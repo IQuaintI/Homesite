@@ -1,0 +1,69 @@
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-banner-text {
+  position: absolute;
+  text-align: center;
+  color: white; /* Adjust color as needed */
+}
+
+.hero-banner-text h1,
+.hero-banner-text h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.highlight {
+  color: #f39c12; /* Adjust highlight color as needed */
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f39c12; /* Adjust button color as needed */
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #d35400; /* Adjust hover color as needed */
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* Adjust background color as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
