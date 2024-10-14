@@ -13,14 +13,14 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../public/linkedInLogo.png" alt="LinkedIn" />
+              <img src="../public/linkedInLogo.png" alt="LinkedIn" style={{width: 50, height: 50}}/>
             </a>
             <a
               href = "/public/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/public/resumeIcon.jpg" alt="Resume"  style={{width: 50, height: 50}}/>
+              <img src="/public/resumeIcon.png" alt="Resume"  style={{width: 50, height: 50}}/>
             </a>
           </div>
         </div>
