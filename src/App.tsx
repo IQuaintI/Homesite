@@ -1,6 +1,6 @@
 import HeroBanner from "./components/heroBanner";
 import Body from "./components/body";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import "./styles/App.scss";
 
 function App() {

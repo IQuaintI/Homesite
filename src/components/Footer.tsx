@@ -5,15 +5,22 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__content">
-          <p className="footer__text">© </p>
+          <p className="footer__text">Alex Gomez © 2024</p>
 
           <div className="footer__social-media">
             <a
-              href="https://www.linkedin.com/in/alexgomez"
+              href="https://www.linkedin.com/in/alex-gomez-87309b12b/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src="../public/linkedInLogo.png" alt="LinkedIn" />
+            </a>
+            <a
+              href = "/public/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/public/resumeIcon.jpg" alt="Resume"  style={{width: 50, height: 50}}/>
             </a>
           </div>
         </div>

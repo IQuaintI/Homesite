@@ -8,27 +8,27 @@ function Body() {
         image="https://via.placeholder.com/150"
         title="Here"
         subtitle="The stumbling blocks you walk on."
+        source="https://github.com/IQuaintI/Homesite"
+        site="https://www.agomez.me"
+      />
+      <Card
+        image="https://via.placeholder.com/150"
+        title="Calculator"
+        subtitle="You know what it does."
         source="https://github.com"
         site="https://example.com"
       />
       <Card
         image="https://via.placeholder.com/150"
-        title="Project 2"
-        subtitle="Description of project 2"
+        title="Weather App"
+        subtitle="Hot and cold, wet and dry."
         source="https://github.com"
         site="https://example.com"
       />
       <Card
         image="https://via.placeholder.com/150"
-        title="Project 3"
-        subtitle="Description of project 3"
-        source="https://github.com"
-        site="https://example.com"
-      />
-      <Card
-        image="https://via.placeholder.com/150"
-        title="Project 4"
-        subtitle="Description of project 4"
+        title="Python Pieces"
+        subtitle="A soup of teeth-pulling catastrophes."
         source="https://github.com"
         site="https://example.com"
       />
