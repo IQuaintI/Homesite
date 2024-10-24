@@ -5,7 +5,7 @@ function Body() {
   return (
     <div className="body">
       <Card
-        image="public/homeIcon.png"
+        image="/homeIcon.png"
         title="Here"
         subtitle="The stumbling blocks you walk on."
         source="https://github.com/IQuaintI/Homesite"
